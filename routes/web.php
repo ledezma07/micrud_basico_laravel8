@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MascotaController;
 use App\Http\Controllers\PersonaController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
@@ -26,3 +27,4 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::resource('personas',PersonaController::class);
+Route::resource('mascotas',MascotaController::class);
